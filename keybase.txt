@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/artemsheludko
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://artemsheludko.pw
+  * I am artemsheludko (https://keybase.io/artemsheludko) on keybase.
+  * I have a public key with fingerprint 752C BB14 468F 045A 60F1  16AA D822 5C3D 367B AB65
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101a726f722f8ddae47814d3958a8c451f2280abb23b3811bfafd46606dbddafa6a0a",
+            "fingerprint": "752cbb14468f045a60f116aad8225c3d367bab65",
+            "host": "keybase.io",
+            "key_id": "d8225c3d367bab65",
+            "kid": "0101a726f722f8ddae47814d3958a8c451f2280abb23b3811bfafd46606dbddafa6a0a",
+            "uid": "cc054eb5582e4e36d62c4b1fae4c0619",
+            "username": "artemsheludko"
+        },
+        "revoke": {
+            "sig_ids": [
+                "7688a895888ff5353c2d6f3764eb01a7b9bf03d2ac879e25cd31d3859a705cd20f"
+            ]
+        },
+        "service": {
+            "hostname": "artemsheludko.pw",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1483525822,
+    "expire_in": 157680000,
+    "prev": "78a1e42e6befce0fdc8d6d49fd5152f5c3a02b2618cc50f524cc14d022edef43",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.61
+Comment: https://keybase.io/crypto
+
+yMJvAnicrZJPbFRFHMe3xSKtEUwTSBMCCS9BiCw4M+/NvNlFQTgUQRMKEtkU6zJ/
+t49u31vee1skuAI9aMAESAA58KcpphygUdI2pByoUuuFTUzkAJeKgCQ2HIwJuiFa
+wHmN3jg6l8nMfH/f3+f3+83Ey7NSTXXNR9rnj/OfttZVr0+XU7niD2P7LB7IvVZ2
+n9WlZjZVlCqK812etLIWgAAyFxHtIqSplEw5LoWOtDOYMiocDDVCFDDOkc1tCiHX
+TEuHEEAkN3LNCAPMSlva8wsqLIWeHxtbFyPBOXQcQjVwMCNAQ0gYkxQhLGxpE5cz
+TrAJ7AyiJMLAcRapVV5g7swhP4P3HP3/zF2esRMCYEdxjClSjrKJJEg4HGpjKwCB
+mUQYqdBn3cqoWRir7qhTFcuyK7AqaStUPUGXSpobeQVDHlnZHZZLqEExPJRqjW1s
+CySJtl1iEiXwPMM1sCVigroZZcqUNpQ2xRnmAnNAQFsdxtuk7fHEjHnSquchrCrt
+MYClMIgDERTNa2ccl7IJWLy3lKj3KJ7/1yfPPV+aWZmAHhVGXuBbWWiUIvYSY+hQ
+GyPTBpS21EclL1R5L1FgUw0wK0mjepIJUwaVgxThSgsFtBRUEulktMQQI22GxgDi
+iEAqBAYaI0cIMx+AkJJKO7aVVLbbD4w3NJysYDxN83wWl0NlVca//eCFVF1TanZD
+ffKJU02Nr/z3tRsOzEl9ubsWTK298H1La//oRIs/MjjcvHPOxMOzx6aqizb7fcMr
+Px1ZV7kVLHu3Y0FD97md1a9q0yfGl9S+y226/cXpX9+6vzgcvLN1+unQs9GBO4PR
+5fpLrfMO/vhb6Zfj1xbeOFLYlX7xwcJPTu2qroeVeG7bIrS0+Kj8x/pcW+bAlbVX
+/6rl+lr61t0faR54c/KlLRc2fH6u/4w6enM8n/298euT73/Tf/NJm7/xtcXtq5tU
+dcXj7Xc/a9a91ckVxb9bZ63+8+Tw5QX1+W1rPiw0Pn7wxsHejjW1ZxuCh+d1ZWDo
+4vDrvUve2XH40cTH6ez+u4eO/3zv1c7J66n35o+9fW/qydip5bn2G9NjT3P/AOJm
+ZoY=
+=6EET
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/artemsheludko
+
+==================================================================
