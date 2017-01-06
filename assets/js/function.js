@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 // Navigation
 $('.navigation').on('click', function(e){
 	e.preventDefault();
@@ -10,4 +12,6 @@ $('.navigation').on('click', function(e){
 			$('.sidebar').removeClass('open');
 		})
 	}
-});	
+});
+
+})
