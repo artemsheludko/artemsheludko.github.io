@@ -41,26 +41,29 @@
 				<p class="sidebar-prof">Design / Development / CMS</p>
 			</div>
 			<div class="sidebar-form">
-				<form action="https://formspree.io/me@artemsheludko.pw" method="POST">
+				<form class ="formBlock contact-form">
 					<fieldset>
 						<legend>Contact</legend>
 						<div class="form-item">
 							<label for="itemName">Name:</label>
-							<input type="text" name="name" placeholder="Your name" required>
+							<input id="name" type="text" name="name" placeholder="Your name" required>
 						</div>
 						<div class="form-item">
 							<label for="itemEmail">E-mail:</label>
-							<input type="email" name="_replyto" placeholder="Your E-mail" required>
+							<input id="email" type="email" placeholder="Your E-mail" required>
 						</div>
 						<div class="form-item">
 							<label for="itemMessage">Message:</label>
-							<textarea type="text" name="message" placeholder="Message" required></textarea>
+							<textarea id="comments" type="text" name="message" placeholder="Message" required></textarea>
 						</div>
 						<div class="form-item">
 							<button type="submit" value="Send" class="form-btn">Send</button>
 						</div>
 					</fieldset>
 				</form>
+				<div class="thankyouBlock">
+					<p>Thanks for filling out my contact form. I'll try to get back to as you soon as possible.</p>
+				</div>
 			</div>
 			<div class="sidebar-social">
 				<a href="http://github.com/artemsheludko" title="Github"><span class="icon-github"></span></a>
