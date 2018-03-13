@@ -46,7 +46,7 @@
         </div>
 
         <div class="sidebar-form">
-          <form class="contact-form" name="contact-form" method="get" data-netlify="true">
+          <form class="contact-form" name="contact" netlify-honeypot="bot-field" method="post" data-netlify="true">
             <fieldset>
               <legend>Contact</legend>
               <div class="form-item">
@@ -55,7 +55,7 @@
               </div>
               <div class="form-item">
                 <label for="email">E-mail (Required)</label>
-                <input id="email" type="email" required>
+                <input id="email" type="email" name="email" required>
               </div>
               <div class="form-item">
                 <label for="comments">Message (Required)</label>
