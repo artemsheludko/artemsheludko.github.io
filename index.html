@@ -2,83 +2,87 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-	<title>ARTEM SHELUDKO</title>
-	<link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="description" content="Artem Sheludko - Freelance Web Developer">
-	<link rel="stylesheet" href="assets/css/main.min.css">
+  <title>Artem Sheludko - Personal Site</title>
+  <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Artem Sheludko - Freelance Web Developer">
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+  <div class="canvas">
+    <div class="overlay" id="mask"></div> <!-- /.overlay -->
+  
+    <nav class="main-nav">
+      <div class="nav-button">
+        <a href="#" class="navigation"><span class="icon-pencil"></span></a>
+      </div>
+      <div class="social-top">
+        <a href="http://twitter.com/artemsheludko_" class="social-link" title="Twitter"><span class="icon-twitter"></span></a>
+        <a href="http://github.com/artemsheludko" class="social-link" title="Github"><span class="icon-github"></span></a>
+        <a href="https://www.linkedin.com/in/artem-sheludko-49b78a15a/" class="social-link" title="Linkedin"><span class="icon-linkedin"></span></a>
+      </div>
+    </nav> <!-- /.main-nav -->
 
-	<nav class="main-nav">
-		<div class="nav-button">
-			<a href="#" class="navigation"><span class="icon-menu"></span></a>
-		</div>
-		<div class="social-top">
-			<a href="http://github.com/artemsheludko" class="social-link" title="Github"><span class="icon-github"></span></a>
-			<a href="http://twitter.com/artemsheludko_" class="social-link" title="Twitter"><span class="icon-twitter"></span></a>
-			<a href="https://keybase.io/artemsheludko" class="social-link" title="Keybase"><span class="icon-key2"></span></a>
-		</div>
-	</nav>
+    <header class="header">
+      <div class="top-wrapper">
+        <div class="top-centered">
+          <div class="top-text">
+            <h1 class="header-title">Artem Sheludko - Freelance Web Developer</h1>
+            <h2 class="header-subtitle">Hi! I'm a web developer. I help startups<br/> create a high-quality custom websites<br/> for small businesses. <span class="c-gray">In my spare time<br/> I read, write code
+             & contribute to<br/> Open Source.</span></h2>
+          </div>
+        </div>
+        </div>
+    </header> <!-- /.header -->
 
-	<header class="header">
-		<div class="top-wrapper">
-			<div class="top-centered">
-				<div class="top-text">
-					<h1 class="animated fadeInDown">Artem Sheludko</h1>
-					<p class="animated fadeInUp">Web Developer based in Ukraine</p>
-				</div>
-			</div>
-		</div>
-	</header>
+    <aside class="sidebar">
+      <a href="#" class="menu-close"><span class="icon-cross"></span></a>
+      <div class="sidebar-container">
+        <div class="sidebar-text">
+          <span class="sidebar-name">Artem Sheludko</span>
+          <p class="sidebar-prof">Design / Development / CMS</p>
+        </div>
+        
+        <div class="sidebar-form">
+          <form class ="contact-form">
+            <fieldset>
+              <legend>Contact</legend>
+              <div class="form-item">
+                <label for="name">Name (Required)</label>
+                <input id="name" type="text" name="name" required>
+              </div>
+              <div class="form-item">
+                <label for="email">E-mail (Required)</label>
+                <input id="email" type="email" required>
+              </div>
+              <div class="form-item">
+                <label for="comments">Message (Required)</label>
+                <textarea id="comments" name="message" rows="10" required></textarea>
+              </div>
+              <div class="form-item">
+                <button type="submit" value="Send" class="form-btn">Send</button>
+              </div>
+            </fieldset>
+          </form>
+        </div> <!-- /.sidebar-form -->
+        
+        <div class="sidebar-social">
+          <a href="http://github.com/artemsheludko" title="Github"><span class="icon-github"></span></a>
+          <a href="http://twitter.com/artemsheludko_" title="Twitter"><span class="icon-twitter"></span></a>
+          <a href="https://www.linkedin.com/in/artem-sheludko-49b78a15a/" title="Linkedin"><span class="icon-linkedin"></span></a>
+        </div>
+        
+      </div>
+    </aside> <!-- /.sidebar -->
 
-	<aside class="sidebar">
-		<a href="#" class="menu-close"><span class="icon-cross"></span></a>
-		<div class="sidebar-container">
-			<div class="sidebar-text">
-				<span class="sidebar-name">Artem Sheludko</span>
-				<p class="sidebar-prof">Design / Development / CMS</p>
-			</div>
-			<div class="sidebar-form">
-				<form class ="formBlock contact-form">
-					<fieldset>
-						<legend>Contact</legend>
-						<div class="form-item">
-							<label for="itemName">Name:</label>
-							<input id="name" type="text" name="name" placeholder="Your name" required>
-						</div>
-						<div class="form-item">
-							<label for="itemEmail">E-mail:</label>
-							<input id="email" type="email" placeholder="Your E-mail" required>
-						</div>
-						<div class="form-item">
-							<label for="itemMessage">Message:</label>
-							<textarea id="comments" type="text" name="message" placeholder="Message" required></textarea>
-						</div>
-						<div class="form-item">
-							<button type="submit" value="Send" class="form-btn">Send</button>
-						</div>
-					</fieldset>
-				</form>
-				<div class="thankyouBlock">
-					<p>Thanks for filling out my contact form. I'll try to get back to as you soon as possible.</p>
-				</div>
-			</div>
-			<div class="sidebar-social">
-				<a href="http://github.com/artemsheludko" title="Github"><span class="icon-github"></span></a>
-				<a href="http://twitter.com/artemsheludko_" title="Twitter"><span class="icon-twitter"></span></a>
-				<a href="https://codepen.io/artemsheludko" title="Codepen"><span class="icon-codepen"></span></a>
-				<a href="https://keybase.io/artemsheludko" title="Keybase"><span class="icon-key2"></span></a>
-			</div>
-		</div>
-	</aside>
+    <footer>
+      <div class="copyright">© 2018 Copyright. This site hosted on <a href="https://www.netlify.com/">Netlify</a>. The source code is hosted on <a href="https://github.com/">Github</a>.</div>
+    </footer> <!-- /footer -->
+  </div> <!-- /.canvas -->
 
-	<footer>
-		<div class="copyright">2017 © Made with <span class="icon-heart"></span> Artem Sheludko</div>
-	</footer>
-
-	<script src="assets/js/jquery-3.1.1.min.js"></script>
-	<script src="assets/js/function.js"></script>
+  <script src="assets/js/jquery-3.1.1.min.js"></script>
+  <script src="assets/js/function.js"></script>
 </body>
 </html>

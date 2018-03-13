@@ -1,48 +1,34 @@
 $(document).ready(function() {
+  
+  // Animation
+  $('.header-title').addClass('animated bounceInLeft');
+  $('.header-subtitle').addClass('animated bounceInUp');
+  $('.nav-button, .social-top, footer').addClass('animated fadeIn');
+  
+  // Sidebar
+  $('.navigation').on('click', function(e){
+    e.preventDefault();
+  $('.navigation').html('<span class="icon-cancel-circle"></span>');
 
-// Navigation
-$('.navigation').on('click', function(e){
-	e.preventDefault();
-	$(this).addClass('open');
-	$('.sidebar').toggleClass('open');
+  $('.canvas').toggleClass('is-open');
+  $('.overlay').addClass('show');
+  
+  $('#mask').click(function() {
+    $('.canvas').removeClass('is-open');
+    $('.overlay').removeClass('show');
+    $('.navigation').html('<span class="icon-pencil"></span>');
+  });
+    
+    $(window).on("resize", function() {
+      var e = $(this);
+      if (e.width() >= 991) {
+        $('.canvas').removeClass('is-open');
+        $('.overlay').removeClass('show');
+        $('.navigation').html('<span class="icon-pencil"></span>');
+      }
+    });
 
-	if ($('.sidebar').hasClass('open')) {
-		$('.menu-close').on('click', function(e){
-			e.preventDefault();
-			$('.sidebar').removeClass('open');
-		});
-	}
-});
+  });
 
-// Send to Formspree
-$('.contact-form').on('submit', function(e) {
-		e.preventDefault();
-
-		//get the name field value
-		var name = $('#name').val();
-		//get the name field value
-		var email = $('#email').val();
-		//get the comments
-		var comments = $('#comments').val();
-
-		$.ajax({
-				url:'https://formspree.io/me@artemsheludko.pw',
-				method:'POST',
-				data:{
-						name:name,
-						_replyto:email,
-						comments:comments,
-						_subject:'Contact Form',
-				},
-				dataType:"json",
-				success:function() {
-						console.log('success');
-						$('.formBlock').hide();
-						$('.thankyouBlock').show();
-				}
-
-		});
-
-});
 
 });
