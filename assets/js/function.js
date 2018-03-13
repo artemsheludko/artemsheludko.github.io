@@ -1,10 +1,5 @@
-// Animation
-$('.header-title').addClass('animated bounceInLeft');
-$('.header-subtitle').addClass('animated bounceInUp');
-$('.nav-button, .social-top, footer').addClass('animated fadeIn');
-
 $(document).ready(function() {
-  
+
   // Sidebar
   $('.navigation').on('click', function(e){
     e.preventDefault();
