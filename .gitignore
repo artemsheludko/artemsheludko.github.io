@@ -25,9 +25,10 @@ Temporary Items
 ### CodeKit ###
 # General CodeKit files to ignore
 config.codekit
+config.codekit
+
 /min
 
 ### CodeKit Patch ###
 */codekit-config.json
 .codekit-cache
-
