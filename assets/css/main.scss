@@ -50,7 +50,7 @@ html, body {
   height: 100%;
   transition: all .4s cubic-bezier(0.565, 1.65, 0.765, 0.88);
   &.is-open {
-    transform: translate3d(450px, 0, 0);        
+    transform: translate3d(450px, 0, 0);
   }
 }
 
@@ -365,17 +365,16 @@ textarea:focus {
   box-shadow: 0 4px 25px rgba(132,135,138,0.1);
 }
 
-.thankyouBlock {
+.thank-you-block {
   display: none;
 }
 
-.thankyouBlock p {
+.thank-you-block p {
   text-align: center;
   padding: 20px;
   margin: 0;
-  border: 1px solid #fff;
-  font-size: 18px;
-  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  background: linear-gradient(135deg, #55b5ad 0%, #5ec9c5 100%);
 }
 
 footer {
@@ -426,7 +425,7 @@ footer .icon-heart {
   }
   .canvas {
     &.is-open {
-      transform: translate3d(400px, 0, 0);        
+      transform: translate3d(400px, 0, 0);
     }
   }
 }
@@ -460,7 +459,7 @@ footer .icon-heart {
   }
   .canvas {
     &.is-open {
-      transform: translate3d(300px, 0, 0);        
+      transform: translate3d(300px, 0, 0);
     }
   }
 }
@@ -470,4 +469,3 @@ footer .icon-heart {
     display: none;
   }
 }
-
