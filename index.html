@@ -1,91 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-  <title>Artem Sheludko - Personal Website</title>
-  <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Artem Sheludko | Freelance Web Developer</title>
+  <meta name="description" content="Hi! I'm a Artem Sheludko. I’m a freelance web developer & open source contributor. I help startups create a high-quality custom websites for small businesses.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Artem Sheludko - Freelance Web Developer and founder Anvod Studio.">
-  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css">
+
+  <meta property="og:title" content="Artem Sheludko | Freelance Web Developer">
+  <meta property="og:url" content="http://artemsheludko.com">
+  <meta property="og:description" content="Hi! I'm a Artem Sheludko. I’m a freelance web developer & open source contributor. I help startups create a high-quality custom websites for small businesses.">
+  <meta property="og:site_name" content="Artem Sheludko">
+  <meta property="og:image" content="img/">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://artemsheludko.com">
+  <meta name="twitter:title" content="Artem Sheludko | Freelance Web Developer">
+  <meta name="twitter:description" content="Hi! I'm a Artem Sheludko. I’m a freelance web developer & open source contributor. I help startups create a high-quality custom websites for small businesses.">
+  <meta name="twitter:image" content="img/">
+
+  <link rel="apple-touch-icon" href="img/">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="canvas">
-    <div class="overlay" id="mask"></div> <!-- /.overlay -->
+	<div class="decoration"></div>
+	<nav class="main-nav" role="navigation">
+		<ul class="main-list list-reset">
+			<li class="main-item"><a href="#js-home" class="main-link">Home</a></li>
+			<li class="main-item"><a href="#js-work" class="main-link">Works</a></li>
+			<li class="main-item"><a href="#js-contact" class="main-link">Contact</a></li>
+		</ul>
+	</nav>
+	<header id="particles-js" class="header">
+		<div class="header-box">
+			<div class="container">
+				<div class="row">
+					<a href="http://artemsheludko.com" class="header-avatar">
+						<img src="img/avatar.jpg" alt="Artem Sheludko">
+					</a>
+					<div class="header-content">
+						<p>Hi! I'm <span class="highlighted">Artem Sheludko</span>. I’m a freelance web developer & open source contributor. I help startups create a high-quality custom websites for small businesses.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#js-work" title="Scroll down" class="arrow-down">
+    	<i class="ion ion-ios-arrow-round-down"></i>
+  	</a>
+	</header>
+	<section id="js-work" class="work">
+		<div class="container">
+			<div class="row">
+				<div class="work-box">
+					<h3 class="work-title section-title">Some of my personal Open Source work:</h3>
+					<a href="https://github.com/artemsheludko/lokmont" title="Lokmont" class="work-item" target="_blank">
+			      <div class="work-item-content">
+			      	<div class="work-item-image" style="background-image: url('img/works/lokmont-preview.jpg');"></div>
+			      	<div class="work-item-text">
+			      		<h4 class="work-item-title">Lokmont</h4>
+			      		<p>Lokmont is a simple and completely responsive theme for Jekyll.</p>
+			      	</div>  	
+			      	<i class="ion ion-ios-arrow-round-forward"></i>
+			      	<div class="circle"></div>
+			      </div>
+			    </a>
 
-    <nav class="main-nav">
-      <div class="nav-button animated fadeIn">
-        <a href="#" class="navigation"><span class="icon-pencil"></span></a>
-      </div>
-      <div class="social-top animated fadeIn">
-        <a href="http://twitter.com/artemsheludko_" class="social-link" title="Twitter"><span class="icon-twitter"></span></a>
-        <a href="http://github.com/artemsheludko" class="social-link" title="Github"><span class="icon-github"></span></a>
-        <a href="https://www.linkedin.com/in/artem-sheludko-49b78a15a/" class="social-link" title="Linkedin"><span class="icon-linkedin"></span></a>
-      </div>
-    </nav> <!-- /.main-nav -->
+			    <a href="https://github.com/artemsheludko/flexible-jekyll" title="Flexible Jekyll" class="work-item" target="_blank">
+			      <div class="work-item-content">
+			      	<div class="work-item-image" style="background-image: url('img/works/flexible-jekyll-preview.jpg');"></div>
+			      	<div class="work-item-text">
+			      		<h4 class="work-item-title">Flexible Jekyll</h4>
+			      		<p>Flexible-Jekyll is a simple and clean theme for Jekyll.</p>
+			      	</div>
+			      	<i class="ion ion-ios-arrow-round-forward"></i>
+			      	<div class="circle"></div>
+			      </div>
+			    </a>
 
-    <header class="header">
-      <div class="top-wrapper">
-        <div class="top-centered">
-          <div class="top-text">
-            <h1 class="header-title animated bounceInLeft">Artem Sheludko - Freelance Web Developer</h1>
-            <h2 class="header-subtitle animated bounceInUp">Hi! I'm a web developer. I help startups<br/> create a high-quality custom websites<br/> for small businesses. <span class="c-gray">In my spare time<br/> I read, write code
-             & contribute to<br/> Open Source.</span></h2>
-          </div>
-        </div>
-        </div>
-    </header> <!-- /.header -->
-
-    <aside class="sidebar">
-      <a href="#" class="menu-close"><span class="icon-cross"></span></a>
-      <div class="sidebar-container">
-        <div class="sidebar-text">
-          <span class="sidebar-name">Artem Sheludko</span>
-          <p class="sidebar-prof">Design / Development / CMS</p>
-        </div>
-
-        <div class="sidebar-form">
-          <form class="contact-form form-block">
-            <fieldset>
-              <legend>Contact</legend>
-              <div class="form-item">
-                <label for="name">Name (Required)</label>
-                <input id="name" type="text" name="name" required>
-              </div>
-              <div class="form-item">
-                <label for="email">E-mail (Required)</label>
-                <input id="email" type="email" name="email" required>
-              </div>
-              <div class="form-item">
-                <label for="comments">Message (Required)</label>
-                <textarea id="comments" name="message" rows="10" required></textarea>
-              </div>
-              <div class="form-item">
-                <button type="submit" value="Send" class="form-btn">Send</button>
-              </div>
-            </fieldset>
-          </form>
-          <div class="thank-you-block">
-            <p>Thanks for filling out my contact form. I'll try to get back to as you soon as possible.</p>
-          </div>
-        </div> <!-- /.sidebar-form -->
-
-        <div class="sidebar-social">
-          <a href="http://github.com/artemsheludko" title="Github"><span class="icon-github"></span></a>
-          <a href="http://twitter.com/artemsheludko_" title="Twitter"><span class="icon-twitter"></span></a>
-          <a href="https://www.linkedin.com/in/artem-sheludko-49b78a15a/" title="Linkedin"><span class="icon-linkedin"></span></a>
-        </div>
-
-      </div>
-    </aside> <!-- /.sidebar -->
-
-    <footer class="animated fadeIn">
-      <div class="copyright">© 2018 Copyright. This site hosted on <a href="https://www.netlify.com/">Netlify</a>. The source code is hosted on <a href="https://github.com/">Github</a>.</div>
-    </footer> <!-- /footer -->
-  </div> <!-- /.canvas -->
-
-  <script src="assets/js/jquery-3.1.1.min.js"></script>
-  <script src="assets/js/function.js"></script>
+			    <a href="https://github.com/artemsheludko/adam-blog" title="Adam Blog" class="work-item" target="_blank">
+			      <div class="work-item-content">
+			      	<div class="work-item-image" style="background-image: url('img/works/adam-blog-preview.jpg');"></div>
+			      	<div class="work-item-text">
+			      		<h4 class="work-item-title">Adam Blog</h4>
+			      		<p>Adam Blog is a minimal clear theme for Jekyll.</p>
+			      	</div>
+			      	<i class="ion ion-ios-arrow-round-forward"></i>
+			      	<div class="circle"></div>
+			      </div>
+			    </a>
+		    </div>
+	    </div>
+    </div>
+	</section>
+	<section id="js-contact" class="contact">
+		<div class="container">
+			<div class="row">
+				<h3 class="contact-title section-title">Let's work together</h3>
+				<form class="form" method="POST" action="//formspree.io/artemsheludko@tuta.io">
+					<div class="form-group">
+						<div class="form-item form-name">
+							<label for="">Your Name</label>
+							<input type="text" name="name" required>
+						</div>
+						<div class="form-item form-email">
+							<label for="">Your Email</label>
+							<input type="email" name="email" required>
+						</div>
+					</div>			
+					<div class="form-item">
+						<label for="">Tell me about your project</label>
+						<textarea name="text" id="" cols="30" rows="10" required></textarea>
+					</div>
+					<div class="form-item">
+						<button class="form-button" type="submit">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+			<ul class="social list-reset">
+				<li class="social-item"><a href="http://twitter.com/artemsheludko_" class="social-link">Twitter</a></li>
+				<li class="social-item"><a href="http://github.com/artemsheludko" class="social-link">Github</a></li>
+				<li class="social-item"><a href="mailto:artemsheludko@tuta.io" class="social-link">Email</a></li>
+			</ul>
+		<div class="copyright">&#169; Copyright 2018. All Rights Reserved. Artem Sheludko.</div>
+	</footer>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/plugins/particles.min.js"></script>
+	<script src="js/plugins/app.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
