@@ -1,5 +1,5 @@
 // Smooth scroll to the section
-$(".main-list li a, .arrow-down").click(function(e) {
+$(".main-list li .main-link, .arrow-down").click(function(e) {
   e.preventDefault();
   var currentBlock = $(this).attr("href"),
       currentBlockOffset = $(currentBlock).offset().top;
