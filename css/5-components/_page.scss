@@ -93,7 +93,7 @@ body {
 			overflow: hidden;
 		}
 		.header-content {
-			max-width: 320px;
+			max-width: 400px;
 			margin: 0 auto;
 			.highlighted {
 				color: $dark;
@@ -193,10 +193,10 @@ body {
 			}
 			.circle {
 					position: absolute;
-			    left: -48px;
+			    left: -46px;
 			    top: 50%;
-			    width: 20px;
-			    height: 20px;
+			    width: 15px;
+			    height: 15px;
 			    margin-top: -8px;
 			    border: 3px solid $white;
 			    border-radius: 15px;
@@ -323,7 +323,7 @@ body {
 		  top: 21.5%;
 		  left: 0;
 		  height: 63.5%;
-		  width: 4px;
+		  width: 3px;
 		  background: #f5f5f5;
     }
 	}
