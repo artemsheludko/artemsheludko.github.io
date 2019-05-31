@@ -1,0 +1,48 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+  <title>{% if page.title %}{{ page.title }} - Jekyll Theme{% else %}{{ site.title }}{% endif %}</title>
+  <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}'>
+
+  <link rel="shortcut icon" href="{{ site.url }}/img/artem-sheludko-avatar.png" >
+  <link rel="apple-touch-icon" href="{{ site.url }}/img/touch-icon.jpg">
+
+  <!-- Twitter -->
+  <meta name='twitter:card' content='summary'>
+  <meta name='twitter:site' content='@artemsheludko_'>
+  <meta name='twitter:creator' content='@artemsheludko_'>
+  <meta name='twitter:title' content='{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}'>
+  <meta name='twitter:description' content='{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}'>
+
+  {% if page.image %}
+  <meta name='twitter:image' content='{{ site.url }}/img/themes/{{page.image}}'>
+  <meta property='og:image' content='{{ site.url }}/img/themes/{{page.image}}'>
+  {% else %}
+  <meta name='twitter:image' content='{{ site.url }}/img/artem-shelukod-photo.jpg'>
+  <meta property='og:image' content='{{ site.url }}/img/artem-shelukod-photo.jpg'>
+  {% endif %}
+
+  <!-- Facebook -->
+  <meta property='og:title' content='{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}'>
+  <meta name="author" content="Artem Sheludko" />
+  <meta property="og:locale" content="en_US" />
+  <meta property='og:type' content='website'>
+  <meta property='og:url' content='{{ site.url }}{{ page.url }}'>
+  <meta property='og:description' content='{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}'>
+  <meta property='og:site_name' content='{{ site.title }}'>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo:700" rel="stylesheet">
+
+  <style>
+  {% capture include_to_scssify %}
+    {% include main.scss %}
+  {% endcapture %}
+  {{ include_to_scssify | scssify }}
+  </style>
+</head>

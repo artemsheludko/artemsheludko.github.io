@@ -1,0 +1,43 @@
+title: Artem Sheludko — Personal Website. I Create Premium and Free Jekyll Themes for your Blog.
+logo: artemsheludko.png
+description: I create premium custom websites for creative people and companies that appreciate quality and simplicity.
+baseurl: "" # The subpath of your site, e.g. /blog
+url: "" # The base hostname & protocol for your site, e.g. http://example.com
+
+# Author Settings
+author: Artem Sheludko
+
+# Contact links
+twitter: https://twitter.com/artemsheludko_
+dribbble: https://dribbble.com/artemsheludko
+instagram: https://www.instagram.com/artemsheludko_
+github: https://github.com/artemsheludko
+email: artemsheludko.tuta.io
+
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
+
+# Collestions
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
+
+  premium-themes:
+    output: true
+
+  free-themes:
+    output: true
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude:
+  - sass

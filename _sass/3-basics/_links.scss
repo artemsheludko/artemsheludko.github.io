@@ -1,0 +1,21 @@
+a {
+  text-decoration: none;
+  outline: 0;
+  color: $black;
+  transition: all 200ms ease;
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+}
+
+a.custom-link {
+  padding-bottom: 1px;
+  border-bottom: 2px solid $black;
+
+  &:hover {
+    padding-bottom: 4px;
+    border-bottom-color: transparent;
+  }
+}

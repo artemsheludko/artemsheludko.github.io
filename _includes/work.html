@@ -1,0 +1,64 @@
+<!-- begin work -->
+<section class="work" id="work">
+  <div class="container">
+    <div class="row">
+      <div class="col col-10 push-1 col-m-12 push-m-0">
+
+        <h2 class="section-title">Premium Themes</h2>
+        <p class="section-subtitle">Be unique! Simple and fast premium themes for creative people by Artem Sheludko.</p>
+
+        <div class="work__box">
+          <div class="row">
+            {% if site.premium-themes.size > 0 %}
+            {% assign sorted-premium-theme = site.premium-themes | sort: 'date' | reverse %}
+              {% for premium-theme in sorted-premium-theme %}
+              <div class="col col-6 col-t-10 push-t-1 col-m-12 push-m-0">
+                <article class="card">
+                  <a class="screen fadein" href="{{premium-theme.url}}" target="_blank" title="{{premium-theme.title}} – Premium Jekyll Theme" aria-label="{{premium-theme.title}} – Premium Jekyll Theme" role="presentation" style="background-image: url('{{ site.baseurl }}/img/themes/{{ premium-theme.image }}')">
+                    {% if premium-theme.new %}
+                      <span class="new">New</span>
+                    {% endif %}
+                  </a>
+                  <h3 class="card__title"><a href="{{premium-theme.url}}" target="_blank" aria-label="Card Title">{{ premium-theme.title }}<span>&#36;{{ premium-theme.price }}</span></a></h3>
+                </article>
+              </div>
+              {% endfor %}
+            {% endif %}
+          </div>
+          <div class="separator"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-10 push-1 col-m-12 push-m-0">
+
+        <h2 class="section-title">Free Themes</h2>
+        <p class="section-subtitle">Some of my works are free and distributed under MIT and GPL3 licenses. I share my works on my <a href="https://dribbble.com/artemsheludko" class="custom-link">Dribbble</a> and <a href="https://github.com/artemsheludko" target="_blank" class="custom-link">Github</a>
+        profiles.</p>
+
+        <div class="work__box">
+          <div class="row">
+            {% if site.free-themes.size > 0 %}
+            {% assign sorted-free-theme = site.free-themes | sort: 'date' | reverse %}
+              {% for free-theme in sorted-free-theme %}
+              <div class="col col-6 col-t-10 push-t-1 col-m-12 push-m-0">
+                <article class="card">
+                  <a class="screen fadein" href="{{free-theme.url}}" target="_blank" title="{{free-theme.title}} – Free Jekyll Theme" aria-label="{{free-theme.title}} – Free Jekyll Theme" role="presentation" style="background-image: url('{{ site.baseurl }}/img/themes/{{ free-theme.image }}')">
+                    {% if free-theme.new %}
+                      <span class="new">New</span>
+                    {% endif %}
+                  </a>
+                  <h3 class="card__title"><a href="{{free-theme.url}}" target="_blank" aria-label="Card Title">{{ free-theme.title }} <span>Free</span></a></h3>
+                </article>
+              </div>
+              {% endfor %}
+            {% endif %}
+          </div>
+          <div class="separator"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end work -->

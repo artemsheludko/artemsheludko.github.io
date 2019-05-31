@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ============================================================ -->
+<!-- =                                                          = -->
+<!-- =    Artem Sheludko Design - http://artemsheludko.com      = -->
+<!-- =            Designer • Developer • Sportsman              = -->
+<!-- =                                                          = -->
+<!-- ============================================================ -->
+{% include head.html %}
+<body>
+
+  {% if site.google-analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
+
+
+  <img src="{{site.baseurl}}/img/right-shape.png" alt="Right Shape" class="right-shape">
+  <div class="round-shape"></div>
+
+  {% include header.html %}
+  {% include left-sidebar.html %}
+
+  <!-- begin content -->
+  <main class="content" aria-label="Content">
+    {{ content }}
+  </main>
+  <!-- end content -->
+
+  {% include newsletter.html %}
+  {% include footer.html %}
+  {% include javascripts.html %}
+</body>
+
+</html>

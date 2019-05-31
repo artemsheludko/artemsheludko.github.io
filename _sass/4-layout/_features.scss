@@ -1,0 +1,52 @@
+// Featurest
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+  .features__item {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin: 0 5% 40px 0;
+    font-weight: 700;
+    color: #2F4C54;
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+
+    .features__icon {
+      width: 65px;
+      margin: 0 10px;
+    }
+
+    .features__desc {
+      max-width: 160px;
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 700;
+      color: #2F4C54;
+    }
+
+  }
+  @media only screen and (max-width: $mobile) {
+    margin-top: 40px;
+
+    .features__item {
+      width: 100%;
+      margin: 0 0 20px 0;
+
+      &:nth-child(3) {
+      margin-bottom: 20px;
+      }
+
+      .features__desc {
+        max-width: 200px;
+      }
+    }
+
+  }
+}
