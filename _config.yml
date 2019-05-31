@@ -1,7 +1,7 @@
 title: Artem Sheludko — Personal Website. I Create Premium and Free Jekyll Themes for your Blog.
 logo: artemsheludko.png
 description: I create premium custom websites for creative people and companies that appreciate quality and simplicity.
-baseurl: "" # The subpath of your site, e.g. /blog
+baseurl: "/artemsheludko.github.io" # The subpath of your site, e.g. /blog
 url: "" # The base hostname & protocol for your site, e.g. http://example.com
 
 # Author Settings
