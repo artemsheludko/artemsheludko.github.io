@@ -36,21 +36,28 @@ $(function() {
   /* =================================
   // Smooth scroll to the pages block
   ================================= */
-  $('.main-nav .main-nav__link').click(function(e) {
-    e.preventDefault();
+  $(function($) {
+    $('a[href*="#"]:not([href="#"])').click(function(e) {
+       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
 
-    if ($(window).width() <= 576) {
-      menuIcon.removeClass('open')
-      headerContent.removeClass('is-active');
-      menuOverlay.removeClass('is-visible');
-    };
+        var target = $(this.hash);
 
-    var currentBlock = $(this).attr('href'),
-        currentBlockOffset = $(currentBlock).offset().top;
+        if ($(window).width() <= 576) {
+           menuIcon.removeClass('open')
+           headerContent.removeClass('is-active');
+           menuOverlay.removeClass('is-visible');
+        };
 
-    $('html, body').animate({
-      scrollTop: currentBlockOffset - headerHeight
-    }, 500);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+        if (target.length) {
+          $('html,body').stop().animate({
+            scrollTop: target.offset().top - 30
+          }, 500);
+        }
+
+      }
+    });
   });
 
 
