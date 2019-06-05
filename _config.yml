@@ -15,7 +15,7 @@ github: https://github.com/artemsheludko
 email: artemsheludko.tuta.io
 
 # Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1.
+google-analytics: UA-141503372-1 # Add your identifier.
 
 # Collestions
 collections:
