@@ -1,11 +1,39 @@
 ---
 layout: default
 ---
+<div class="container">
+  <h3 class="project-title" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="800">Things I've made</h3>
+  {% if site.projects.size > 0 %}
+  {% assign sorted-projects = site.projects | sort: 'date' | reverse %}
+    {% for project in sorted-projects %}
+    <div class="project" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="800">
+      {% if project.image %}
+      <div class="project__image-box">
+        <a href="{{project.home}}" class="project__image" target="_blank" rel="noopener" style="background-image: url({{project.image}})"></a>
+      </div>
+      {% endif %}
+      <div class="project__content">
+        {% if forloop.first %}
+        <span class="project__new">New Theme</span>
+        {% endif %}
+        <h2 class="project__title">
+          <a href="{{project.home}}" target="_blank" rel="noopener">{{project.title}}</a>
+        </h2>
+        <div class="project__meta">
+          <span class="project__date">Published <time datetime="{{ project.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}{{ project.date | date: date_format }}</time></span>
+        </div>
+        <p class="project__excerpt">{% if project.description %}{{ project.description }}{% else %}{{ project.content | strip_html | truncate: 130 }}{% endif %}</p>
+        <a href="{{project.demo}}" class="live-demo" target="_blank" rel="noopener">Live demo</a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+</div>
 
-{% include hero.html %}
-
-{% include features.html %}
-
-{% include work.html %}
-
-{% include contact.html %}
+<div class="container">
+  <div class="sponsor">
+    <p>If you appreciate my work, please consider patronage. Financial support enables me to keep my materials open source to all and supports my independent lifestyle.</p>
+    <p>Find out how on <a href="https://www.patreon.com/artemsheludko" class="patreon-link" target="_blank" rel="noopener">my Patreon page</a>.</p>
+    <p>If you need my professional help you can hire me on <a href="https://www.fiverr.com/artem_sheludko" class="fiverr-link" target="_blank" rel="noopener">Fiverr</a>.</p>
+  </div>
+</div>

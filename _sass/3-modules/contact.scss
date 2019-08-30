@@ -1,0 +1,41 @@
+/* Contact */
+.contact {
+  text-align: center;
+}
+
+.contact__title {
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family: 'IBM Plex Mono', monospace;
+  line-height: 25px;
+  color: rgba($white, 0.6);
+  a {
+    font-family: 'Lora', serif;
+    color: $secondary-color;
+    &:hover {
+      color: rgba($white, 0.3);
+    }
+  }
+}
+
+.contact__item {
+  display: inline-block;
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.contact__link {
+  display: inline-block;
+  &:hover {
+    .contact__icon {
+      color: #666;
+    }
+  }
+  .contact__icon {
+    font-size: 20px;
+    color: #333;
+    transition: all 300ms ease;
+  }
+}

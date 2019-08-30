@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
+gem "jekyll", "~> 4.0.0"
 gem "bundler"
-gem "jekyll"
 gem "jekyll-sitemap"

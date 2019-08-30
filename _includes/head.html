@@ -1,4 +1,5 @@
 <head>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,8 +9,8 @@
   <title>{% if page.title %}{{ page.title }} - Jekyll Theme{% else %}{{ site.title }}{% endif %}</title>
   <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}'>
 
-  <link rel="shortcut icon" href="{{ site.url }}/img/artem-sheludko-avatar.png" >
-  <link rel="apple-touch-icon" href="{{ site.url }}/img/touch-icon.jpg">
+  <link rel="shortcut icon" href="{{ site.url }}/assets/img/artem-sheludko-avatar.png" >
+  <link rel="apple-touch-icon" href="{{ site.url }}/assets/img/touch-icon.jpg">
 
   <!-- Twitter -->
   <meta name='twitter:card' content='summary'>
@@ -19,11 +20,11 @@
   <meta name='twitter:description' content='{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}'>
 
   {% if page.image %}
-  <meta name='twitter:image' content='{{ site.url }}/img/themes/{{page.image}}'>
-  <meta property='og:image' content='{{ site.url }}/img/themes/{{page.image}}'>
+  <meta name='twitter:image' content='{{ site.url }}/assets/img/project/{{page.image}}'>
+  <meta property='og:image' content='{{ site.url }}/assets/img/project/{{page.image}}'>
   {% else %}
-  <meta name='twitter:image' content='{{ site.url }}/img/artem-shelukod-photo.jpg'>
-  <meta property='og:image' content='{{ site.url }}/img/artem-shelukod-photo.jpg'>
+  <meta name='twitter:image' content='{{ site.url }}/assets/img/artem-shelukod-photo.jpg'>
+  <meta property='og:image' content='{{ site.url }}/assets/img/artem-shelukod-photo.jpg'>
   {% endif %}
 
   <!-- Facebook -->
@@ -36,13 +37,13 @@
   <meta property='og:site_name' content='{{ site.title }}'>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Arvo:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 
-  <style>
-  {% capture include_to_scssify %}
-    {% include main.scss %}
-  {% endcapture %}
-  {{ include_to_scssify | scssify }}
-  </style>
+  <!-- Icons -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/fonts/icomoon/style.css">
+
+  <!-- Main Stylesheet -->
+  <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+
 </head>

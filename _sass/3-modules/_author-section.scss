@@ -1,0 +1,53 @@
+/* Author */
+.author {
+  margin: 110px 0 70px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #010101;
+  @media (max-width: $mobile) {
+    margin: 50px 0;
+    padding-bottom: 50px;
+  }
+}
+
+.author__img {
+  display: block;
+  max-width: 130px;
+  max-height: 130px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  background-color: $dark;
+  transition: opacity 250ms ease;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.author__name {
+  margin-bottom: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba($white, 0.6);
+  text-align: center;
+}
+
+.author__job {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 37px;
+  text-align: center;
+  color: rgba($white, 0.8);
+}
+
+.author__bio {
+  max-width: 450px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: rgba($white, 0.6);
+}
+
+.author__contact {
+  text-align: center;
+}

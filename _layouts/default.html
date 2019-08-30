@@ -3,22 +3,18 @@
 <!-- ============================================================ -->
 <!-- =                                                          = -->
 <!-- =    Artem Sheludko Design - http://artemsheludko.com      = -->
-<!-- =            Designer • Developer • Sportsman              = -->
+<!-- =            Designer • Developer • Family Man              = -->
 <!-- =                                                          = -->
 <!-- ============================================================ -->
 {% include head.html %}
+
 <body>
 
   {% if site.google-analytics %}
     {% include google-analytics.html %}
   {% endif %}
 
-
-  <img src="{{site.baseurl}}/img/right-shape.png" alt="Right Shape" class="right-shape">
-  <div class="round-shape"></div>
-
-  {% include header.html %}
-  {% include left-sidebar.html %}
+  {% include author.html %}
 
   <!-- begin content -->
   <main class="content" aria-label="Content">
@@ -26,9 +22,12 @@
   </main>
   <!-- end content -->
 
-  {% include newsletter.html %}
   {% include footer.html %}
-  {% include javascripts.html %}
+
+  <!-- begin js -->
+  <script src="{{ site.baseurl }}/assets/js/vendors/aos.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/common.js"></script>
+  <!-- end js -->
 </body>
 
 </html>
