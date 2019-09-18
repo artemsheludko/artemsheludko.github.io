@@ -13,8 +13,8 @@ layout: default
       </div>
       {% endif %}
       <div class="project__content">
-        {% if forloop.first %}
-        <span class="project__new">New Theme</span>
+        {% if project.price %}
+        <span class="project__new">Premium Theme</span>
         {% endif %}
         <h2 class="project__title">
           <a href="{{project.home}}" target="_blank" rel="noopener">{{project.title}}</a>
@@ -24,6 +24,9 @@ layout: default
         </div>
         <p class="project__excerpt">{% if project.description %}{{ project.description }}{% else %}{{ project.content | strip_html | truncate: 130 }}{% endif %}</p>
         <a href="{{project.demo}}" class="live-demo" target="_blank" rel="noopener">Live demo</a>
+        {% if project.price %}
+        <a href="{{project.home}}" class="buy-theme" target="_blank" rel="noopener">Buy for ${{project.price}}</a>
+        {% endif %}
       </div>
     </div>
     {% endfor %}
@@ -35,5 +38,6 @@ layout: default
     <p>If you appreciate my work, please consider patronage. Financial support enables me to keep my materials open source to all and supports my independent lifestyle.</p>
     <p>Find out how on <a href="https://www.patreon.com/artemsheludko" class="patreon-link" target="_blank" rel="noopener">my Patreon page</a>.</p>
     <p>If you need my professional help you can hire me on <a href="https://www.fiverr.com/artem_sheludko" class="fiverr-link" target="_blank" rel="noopener">Fiverr</a>.</p>
+    <p>I also create premium themes for Jekyll. You can find them at <a href="https://jekyllthemes.io/developers/artem-sheludko" target="_blank" rel="noopener">JekyllThemes.io</a></p>
   </div>
 </div>

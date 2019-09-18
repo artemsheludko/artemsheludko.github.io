@@ -71,7 +71,8 @@
   color: rgba($white, 0.6);
 }
 
-.live-demo {
+.live-demo,
+.buy-theme {
   font-weight: 700;
   font-size: 16px;
   line-height: 27px;
@@ -81,6 +82,10 @@
   &:hover {
     color: rgba($primary-color, 0.9);
   }
+}
+
+.buy-theme {
+  margin-left: 15px;
 }
 
 .project-title {
