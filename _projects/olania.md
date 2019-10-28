@@ -1,5 +1,5 @@
 ---
-title: Melotta
+title: Olania
 description: Olania is a compact and fast theme designed for those who need functionality and simplicity.
 image: '/assets/img/projects/olania-preview.jpg'
 price: 35
