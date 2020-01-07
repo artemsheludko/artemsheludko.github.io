@@ -22,13 +22,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-### CodeKit ###
-# General CodeKit files to ignore
-config.codekit
-config.codekit
-
-/min
-
-### CodeKit Patch ###
-*/codekit-config.json
-.codekit-cache
+### Jekyll ###
+_site
+.sass-cache
+.jekyll-metadata
