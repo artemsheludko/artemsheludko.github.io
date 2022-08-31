@@ -1,6 +1,6 @@
 ---
 title: Dann
-description: Menca is a super fast and clean blogging theme for Jekyll.
+description: A powerful multi-purpose Jekyll theme with a unique design.
 image: '/assets/img/projects/dann-preview.jpg'
 price: 49
 home: https://jekyllthemes.io/theme/dann-blog-jekyll-theme
